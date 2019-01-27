@@ -1,0 +1,591 @@
+@font-face {
+  font-family: DroidSans;
+  src: url(../fonts/DroidSans.ttf);
+}
+
+body, html{
+  height:100%;
+  width: 100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+.pimg1, .pimg2, .pimg3 {
+  max-width: 100%;
+  position:relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1 {
+  background-image:url('../img/image1.jpg');
+  min-height:100%;
+
+}
+
+.pimg1 p {
+  font-family: DroidSans;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+.pimg2 {
+  background-image:url('../img/image2.jpg');
+  min-height:400px;
+}
+
+.pimg3 {
+  background-image:url('../img/image3.jpg');
+  min-height:400px;
+}
+
+@media(max-width:568px) {
+  .pimg1, .pimg2, .pimg3 {
+    background-attachment:scroll;
+  }
+}
+
+/*Top*/
+
+#top {
+	height: 80px;
+  position: relative;
+	background: url('../img/header-bg.png') no-repeat center/cover;
+}
+
+.top h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 40px;
+  font-family: DroidSans;
+  letter-spacing: 3px;
+}
+
+/*Меню*/
+
+h1 {
+	font-family: 'OpenSans-ExtraBold';
+	color: #455574;
+	text-align: center;
+}
+
+#menu {
+	height: 46px;
+  width: 100%;
+  background: black no-repeat center/cover;
+	align-items: center;
+	z-index: 5;
+  opacity: 0.75;
+}
+
+#menu ul {
+  width: 100%;
+	display: table;
+	margin: auto 0;
+	padding-left: 2px;
+}
+
+#menu .li {
+	list-style-type: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 46px;
+  text-align: center;
+}
+
+#menu .li a {
+	height: 46px;
+	padding: 0 25px 0 25px;
+  color: #3E97D1;
+	font-size: 20px;
+  text-decoration: none;
+	background-color: black;
+	display: table-cell;
+	vertical-align: middle;
+  font-family: DroidSans;
+  transition: 0.3s;
+  letter-spacing: 0.7px;
+}
+
+#menu ul:first-child {
+  padding-left: 0px;
+}
+
+#menu ul .li a:hover {
+	color: #03426A;
+	background-color: #65A6D1;
+}
+
+.language {
+  list-style-type: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	height: 46px;
+  text-align: center;
+}
+
+.language a {
+  height: 46px;
+	width: auto;
+  color: #3E97D1;
+	font-size: 20px;
+  text-decoration: none;
+	display: table-cell;
+	background-color: black;
+	vertical-align: middle;
+  font-family: DroidSans;
+  transition: 0.1s;
+  padding-right: 10px;
+}
+
+.language a:hover {
+  color: #03426A;
+}
+
+.change {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+/*Skills*/
+
+.Skills {
+	text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+section h1 {
+	font-family: DroidSans;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 2px;
+	color: #455574;
+  margin: 30px 0;
+}
+
+.progress-bar {
+	display: inline-block;
+  text-align: center;
+  margin: 0 80px;
+}
+
+.progress-bar .skill {
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+
+.progress-bar h2 {
+  text-align: center;
+	font-size: 25px;
+}
+
+.progress-bar canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.skill img {
+	height: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.slide-toggle {
+  width: 100%;
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+.slide-toggle p {
+  margin: 0;
+  color: black;
+}
+
+.slide-toggle:hover {
+  background-color: grey;
+}
+
+.More {
+  height: 200px;
+  width: 100%;
+}
+
+
+
+/*Study*/
+
+table {
+  border-collapse: collapse; /*убираем пустые промежутки между ячейками*/
+  margin: auto;
+  margin-bottom: 30px;
+  color: black;
+  max-width: 700px;
+}
+
+th {
+  width: 50%;
+  text-align: center;
+  font-size: 25px;
+  color: #455574;
+}
+
+td {
+  text-align: left;
+  vertical-align: top;
+}
+
+td h2 {
+  padding: 10px 0 10px 0;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+td p {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  padding: 0px 10px 0px 25px;
+}
+
+table ul {
+  margin: 0;
+  padding: 0;
+}
+
+table ul li {
+    list-style-type: none;
+    text-align: left;
+}
+
+.border {
+    border-right: 2px solid grey;
+}
+
+/*Contacts*/
+
+.Contacts {
+	height: 250px;
+	text-align: center;
+}
+
+.Contacts .Messengers {
+  display: inline-block;
+	float: left;
+	width: 50%;
+}
+
+.telegram, .skype, .gmail {
+  display: inline-block;
+  width: 100%;
+}
+
+.Messengers a {
+	float: left;
+	text-decoration: none;
+	line-height: 50px;
+	height: 30px;
+  padding-left: 30px;
+}
+
+.Contacts img {
+	margin: 0 auto;
+	align: center;
+  width: 30px;
+	vertical-align: middle;
+  opacity: 0.85;
+  margin-right: 5px;
+}
+
+.Messengers img:hover {
+	opacity: 1;
+}
+
+.Messengers a:hover {
+  text-decoration: underline;
+}
+
+.telegram img:hover, .skype img:hover {
+		border-radius: 50%;
+}
+
+.CV {
+  display: inline-block;
+	float: top;
+  width: 50%;
+	margin: 0;
+	padding: 0;
+}
+
+.CV a {
+	padding: 15px 20px;
+	float: right;
+	background-color: rgb(57, 104, 211);
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	width: 162px;
+	border: 1px solid blue;
+	border-radius: 20px;
+	line-height: 30px;
+  opacity: 0.9;
+}
+
+.CV a:hover {
+	box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, .3);
+	color: white;
+  opacity: 1;
+}
+
+/*Topbottom*/
+
+#topbottom {
+  z-index: 10;
+	bottom: 0;
+	cursor: pointer;
+	display: none;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	width: 100px;
+	height: 100px;
+	background: grey;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	opacity: 0.5;
+}
+
+#triangle {
+  z-index: 10;
+	width: 0;
+	height: 0;
+	position: fixed;
+	bottom: 80px;
+	right: 76px;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid white;
+}
+
+#topbottom:hover {
+	opacity: 0.7;
+}
+
+/*Footer*/
+
+footer {
+  position: relative;
+	height: 40px;
+	background-color: #03426A;
+}
+
+footer p {
+  right: 0;
+  padding-right: 50px;
+  position: absolute;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  margin: 0;
+}
+
+/*Медиа-запросы*/
+
+@media screen and (max-width: 700px) {
+  .pimg1 p {
+    line-height: 40px;
+  }
+  .progress-bar {
+    margin: 0 20px;
+  }
+  .progress-bar .skill {
+    width: 150px;
+    height: 150px;
+  }
+  .skill img {
+  	height: 65px;
+  }
+  .progress-bar h2 {
+  	font-size: 20px;
+  }
+  #menu .li a {
+    padding: 0 25px 0 15px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+  }
+  .language a {
+    font-size: 15px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .pimg1 p {
+    line-height: 40px;
+  }
+  #menu .li a {
+    padding: 0 25px 0 5px;
+    font-size: 15px;
+  }
+  .language a {
+    font-size: 15px;
+    padding-right: 5px;
+  }
+  .Messengers a {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .pimg1 p {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  #menu .li a {
+    padding: 0 15px 0 2px;
+    font-size: 12px;
+  }
+  .language a {
+    font-size: 12px;
+    padding-right: 2px;
+  }
+  .Messengers a {
+    padding-left: 5px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width:415px) {
+  .pimg1 p {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  #menu .li a {
+    padding: 0 12px 0 0px;
+    font-size: 12px;
+  }
+  .language a {
+    font-size: 12px;
+    padding-right: 2px;
+  }
+  th {
+    font-size: 15px;
+  }
+  td h2 {
+    padding: 5px 0 5px 0;
+    font-size: 10px;
+  }
+  td p {
+    padding: 0px 5px 0px 10px;
+    font-size: 12px;
+  }
+  td {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:350px) {
+  #menu {
+  	height: 30px;
+  }
+
+  #menu ul {
+  	padding-left: 2px;
+  }
+
+  #menu .li {
+  	height: 30px;
+  }
+
+  #menu .li a {
+  	height: 30px;
+  	padding: 0 10px 0 0px;
+  	font-size: 12px;
+  }
+
+  .language {
+  	height: 30px;
+  }
+
+  .language a {
+    height: 30px;
+  	font-size: 12px;
+    padding-right: 5px;
+  }
+}
+
+@media screen and (max-width:335px) {
+  .top h1 {
+    font-size: 25px;
+  }
+  #menu .li a {
+    height: 30px;
+    padding: 0 5px 0 0px;
+    font-size: 10px;
+  }
+
+  .language a {
+    font-size: 10px;
+    padding-right: 5px;
+  }
+  .Contacts img {
+    width: 20px;
+  }
+  .Messengers a {
+    padding-left: 5px;
+    font-size: 7px;
+  }
+  .CV a {
+  	padding: 5px 10px;
+  	font-size: 10px;
+  	width: 102px;
+  	border-radius: 10px;
+  	line-height: 15px;
+    opacity: 0.9;
+  }
+  #topbottom {
+  	right: 25px;
+  	bottom: 25px;
+  	width: 50px;
+  	height: 50px;
+  	-moz-border-radius: 25px;
+  	-webkit-border-radius: 25px;
+  	border-radius: 25px;
+  }
+
+  #triangle {
+  	bottom: 40px;
+  	right: 38px;
+  	border-left: 12.5px solid transparent;
+  	border-right: 12.5px solid transparent;
+  	border-bottom: 25px solid white;
+  }
+}
